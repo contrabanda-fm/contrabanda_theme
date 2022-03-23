@@ -1,0 +1,101 @@
+# -----------------------------------------------------------------
+# .gitignore for WordPress Themes
+# Originaly from http://ironco.de/bare-minimum-git/
+#
+# This file is tailored for a WordPress themes
+#
+# This file specifies intentionally untracked files to ignore
+# http://git-scm.com/docs/gitignore
+#
+# NOTES:
+# The purpose of gitignore files is to ensure that certain files not
+# tracked by Git remain untracked.
+#
+# To ignore uncommitted changes in a file that is already tracked,
+# use `git update-index --assume-unchanged`.
+#
+# To stop tracking a file that is currently tracked,
+# use `git rm --cached`
+#
+# -----------------------------------------------------------------
+
+# ignore all files starting with .
+.*
+
+# track this file .gitignore, .gitattributes and .gitkeep empty folder
+# placeholders (i.e. do NOT ignore it)
+!.gitignore
+!.gitattributes
+!.gitkeep
+!.npmrc
+!.nvmrc
+!.browserslistrc
+!.prettierignore
+
+# track .editorconfig file (i.e. do NOT ignore it)
+!.editorconfig
+
+# track setting files (i.e. do NOT ignore them)
+!.babelrc
+!.prettierrc
+!.distignore
+!.prettierignore
+
+# ignore all files that start with ~
+~*
+
+# ignore OS generated files
+ehthumbs.db
+Thumbs.db
+.DS_Store
+.DS_Store?
+
+
+# ignore Editor and dev environment config files
+*.sublime-project
+*.sublime-workspace
+*.komodoproject
+*.code-workspace
+phpcs.xml
+phpunit.xml
+wp-cli.local.yml
+
+
+# ignore log files and databases
+logs/
+reports/
+*.log
+*.sql
+*.sqlite
+
+# ignore compiled files
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# ignore packaged files
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# ignore node/grunt/composer dependency directories
+node_modules/
+vendor/
+
+# ignore manual backup versions of files
+*.bak
+
+# Ignore compiled JS&CSS + /docs as they are made by CISCV
+assets/css/*
+assets/js/*
+# track the docs/ folder itself (i.e. do NOT ignore empty docs)
+!assets/css/.gitkeep
+!assets/js/.gitkeep

@@ -1,0 +1,29 @@
+{
+  "name": "contrabanda_theme",
+  "version": "1.0.0",
+  "description": "A child theme for Bootstrap Basic4 wp theme",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "wp-scripts build --stats-error-details --stats-children --config=webpack.config.cjs --mode development --watch",
+    "build": "wp-scripts build --stats-error-details --config=webpack.config.cjs --mode=production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/contrabanda-fm/contrabanda_theme.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/contrabanda-fm/contrabanda_theme/issues"
+  },
+  "homepage": "https://github.com/contrabanda-fm/contrabanda_theme#readme",
+  "devDependencies": {
+    "@wordpress/browserslist-config": "^4.1.2",
+    "@wordpress/scripts": "^22.2.1",
+    "babel-preset-env": "^1.7.0",
+    "browserslist": "^4.20.0",
+    "cssnano": "^5.1.4",
+    "webpack-merge": "^5.8.0"
+  }
+}
