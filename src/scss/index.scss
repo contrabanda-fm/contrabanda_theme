@@ -1,3 +1,79 @@
-body{
-    background-color: red;
+@import '~rupture-sass/rupture';
+@import './rupture.scss';
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap');
+html, body{
+}
+.contrabanda-theme{
+    font-family: 'Kanit';
+    $colors: (
+        orange: #BA3800,
+        pink: #AB0571,
+        blue: #003C8F,
+        green: #218F00,
+        red: #940000,
+        purple: #7900BA 
+    );
+    @each $color, $tone in $colors{
+        &.#{$color}{
+            a,a:hover{
+                color: $tone;
+            }
+            .navbar-light .navbar-nav .nav-link{
+                color: $tone;
+                font-weight: 500;
+                &:hover{
+                    color: $tone;
+                }
+            }
+        }
+    }
+    a,a:hover{
+        color: #333;
+        font-weight: 400;
+    }
+    .nowplaying{
+        display: flex;
+        justify-content: space-between;
+        font-size: 12px;
+        max-width: 300px;
+    }
+    .site-branding{
+        justify-content: space-between;
+    }
+    .site-title{
+        min-width: 390px;
+        &-heading{
+            text-transform: uppercase;
+            letter-spacing: -2px;
+            a, a:hover{
+                font-weight: 600;
+            }
+        }
+        .site-description{
+            color: #000;
+        }
+    }
+    .page-header-top-right{
+        max-width: 300px;
+    }
+    .language-chooser{
+        padding: 0;
+        border-top: solid 1px #ddd;
+        @include above(992px){
+            display: flex;
+            border-top: none;
+        }
+        li{
+            list-style: none;
+            padding: .5rem;
+            border: none;
+            &.active{
+                opacity: 0.5;
+            }
+            a{
+                font-weight: 500;
+            }
+        }
+    }
 }

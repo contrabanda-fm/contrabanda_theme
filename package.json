@@ -25,5 +25,8 @@
     "browserslist": "^4.20.0",
     "cssnano": "^5.1.4",
     "webpack-merge": "^5.8.0"
+  },
+  "dependencies": {
+    "rupture-sass": "^1.0.0"
   }
 }
