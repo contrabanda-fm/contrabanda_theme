@@ -3,7 +3,7 @@
         <div class="row">
             <?php
             $args = array(
-                'posts_per_page' => 4,
+                'posts_per_page' => 3,
             );
             $last_posts_query = new WP_Query( $args );
             while( $last_posts_query->have_posts() ) : $last_posts_query->the_post();?>
