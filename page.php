@@ -10,7 +10,7 @@
 // begins template. -------------------------------------------------------------------------
 get_header();
 ?> 
-                <main id="main" class="col-md-12 site-main" role="main">
+                <main id="main" class="col-md-8 site-main" role="main">
                     <?php
                     if (have_posts()) {
                         $Bsb4Design = new \BootstrapBasic4\Bsb4Design();

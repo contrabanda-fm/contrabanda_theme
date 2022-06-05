@@ -11,23 +11,26 @@ $Bsb4Design = new \BootstrapBasic4\Bsb4Design();
 ?> 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     <header class="entry-header">
+        <?php if (is_search()||is_archive()||is_home()) { // Only display Excerpts for Search ?> 
+            <div class='card-thumb' style='background-image:url(<?php echo get_the_post_thumbnail_url();?>);'></div>
+        <?php } ?> 
         <h1 class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
 
         <?php if ('post' == get_post_type()) { ?> 
-        <div class="entry-meta">
-            <?php $Bsb4Design->postOn(); ?> 
-        </div><!-- .entry-meta -->
+            <div class="entry-meta">
+                <?php the_date() ?> 
+            </div><!-- .entry-meta -->
         <?php } //endif; ?> 
     </header><!-- .entry-header -->
 
-    <?php if (is_search()) { // Only display Excerpts for Search ?> 
-    <div class="entry-summary">
-        <?php the_excerpt(); ?> 
-        <div class="clearfix"></div>
-    </div><!-- .entry-summary -->
+    <?php if (is_search()||is_archive()||is_home()) { // Only display Excerpts for Search ?> 
+        <div class="entry-summary">
+            <?php the_excerpt(); ?> 
+            <div class="clearfix"></div>
+        </div><!-- .entry-summary -->
     <?php } else { ?> 
     <div class="entry-content">
-        <?php the_content($Bsb4Design->continueReading(true)); ?> 
+        <?php the_content(); ?> 
         <div class="clearfix"></div>
         <?php 
         /**
