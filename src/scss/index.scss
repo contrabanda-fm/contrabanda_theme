@@ -96,4 +96,14 @@ html, body{
         padding-top: 32px;
         border-top: 1px solid #ddd;
     }
+    .link{
+        &__block{
+            margin-top: 32px;
+            padding-top: 32px;
+            border-top: 1px solid #ddd;
+            li{
+                list-style: none;
+            }
+        }
+    }
 }

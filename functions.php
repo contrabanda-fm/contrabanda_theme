@@ -6,4 +6,5 @@
     }
     // Register style sheet.
     add_action( 'wp_enqueue_scripts', 'contrabanda_theme_scripts' );
+    add_filter( 'pre_option_link_manager_enabled', '__return_true' );
 ?>
