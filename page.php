@@ -12,7 +12,7 @@ get_header();
 ?>
     <?php
     $main_width = 8; 
-    if(get_field('pagina_de_programacio','option')==$post->ID){
+    if(get_field('pagina_de_programacio','option')->ID==$post->ID){
         $main_width = 12;   
     }?>
     <main id="main" class="col-md-<?php echo $main_width?> site-main" role="main">
