@@ -22,12 +22,11 @@ get_header();
 
                                 <div class="entry-content">
                                     <?php //the_content(); ?> 
-                                    <?php wp_list_bookmarks('show_description=1&link_after=<br/>&category=187'); ?>
-                                    <?php wp_list_bookmarks('show_description=1&link_after=<br/>&category=188'); ?>
-                                    <?php wp_list_bookmarks('show_description=1&link_after=<br/>&category=189'); ?>
-                                    <?php wp_list_bookmarks('show_description=1&link_after=<br/>&category=2'); ?>
-                                    <?php wp_list_bookmarks('show_description=1&link_after=<br/>&category=191'); ?>
-                                    <?php wp_list_bookmarks('show_description=1&link_after=<br/>&category=6&category_before=<div class="link__block">&category_after=</div>'); ?>
+                                    <?php wp_list_bookmarks('show_description=1&link_after=<br/>&category=187&category_before=<div class="link__block">&category_after=</div>'); ?>
+                                    <?php wp_list_bookmarks('show_description=1&link_after=<br/>&category=188&category_before=<div class="link__block">&category_after=</div>'); ?>
+                                    <?php wp_list_bookmarks('show_description=1&link_after=<br/>&category=189&category_before=<div class="link__block">&category_after=</div>'); ?>
+                                    <?php wp_list_bookmarks('show_description=1&link_after=<br/>&category=2&category_before=<div class="link__block">&category_after=</div>'); ?>
+                                    <?php wp_list_bookmarks('show_description=1&link_after=<br/>&category=191&category_before=<div class="link__block">&category_after=</div>'); ?>
                                     <div class="clearfix"></div>
                                 </div><!-- .entry-content -->
 
