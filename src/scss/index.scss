@@ -26,7 +26,7 @@ html, body{
                     color: $tone;
                 }
             }
-            .badge-secondary{
+            .badge-secondary, .contrabanda-player{
                 background-color: $tone;
             }
         }
@@ -58,7 +58,7 @@ html, body{
         }
     }
     .page-header-top-right{
-        max-width: 300px;
+        max-width: max-content;
     }
     .language-chooser{
         padding: 0;
